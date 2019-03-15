@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Thasadith|Cormorant+Garamond|Trocchi" rel="stylesheet">
+    <title>Akib's Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: rgb(247, 241, 241);
+            padding: 60px;
+        }
+
+        #title {
+            text-align: center;
+            font-family: pacifico;
+            font-size: 21px;
+            
+            color: rgb(118, 121, 120);
+        }
+
+        #title h3 {
+            padding: 20px;
+            font-family: cursive;
+        }
+
+        #menu {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            
+
+        }
+
+        .link {
+            padding-right: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition-duration: 400ms;
+            font-family: 'Thasadith', sans-serif;
+            color: rgb(14, 9, 9);
+        }
+
+        .link:hover {
+            color: rgb(8, 137, 146);
+            font-size: 19px;
+        }
+
+
+        #heading {
+            text-align: center;
+            font-size: 27px;
+            padding: 30px 0 30px 0px;
+            color: rgb(0, 0, 0);
+            
+
+        }
+
+        #about {
+            padding: 60px;
+        }
+
+        #myimg {
+            width: 150px;
+            margin: auto;
+            display: block;
+            margin-bottom: 10px;
+
+            border-radius: 50%;
+
+        }
+
+        #about p {
+            padding-top: 10px;
+            text-align: center;
+            font-size: 21px;
+            width: 700px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        #sub_heading {
+            text-align: center;
+            font-size: 22px;
+            color: rgb(7, 7, 7);
+
+            margin: 25px 0 0 0;
+            font-weight: 600;
+        }
+
+        #code {
+            width: fit-content;
+            display: table;
+            background-color: black;
+            padding: 16px 10px;
+            font-size: 20px;
+            margin: 11px auto;
+            text-align: center;
+            color: rgb(3, 204, 3);
+        }
+
+        #logo_box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 23px 0;
+            flex-wrap: wrap;
+
+        }
+
+        .logo {
+            height: 100px;
+            width: 100px;
+            margin: 0px 10px 22px 0;
+            padding: 5px;
+            border:2px solid rgb(63, 62, 62);
+            /* border-left: 3px solid rgb(14, 103, 155);
+            border-right: 3px solid rgb(29, 155, 18);
+            border-top: 3px solid rgb(230, 216, 23);
+            border-bottom: 3px solid rgb(107, 38, 70); */
+        }
+
+        #portfolio {
+            background-color: rgb(230, 231, 240);
+            padding: 60px;
+
+        }
+
+        #project_box {
+            margin: 60px 0 10px 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+
+        #project_box img {
+            width: 590px;
+            max-width: 100%;
+            height: auto;
+            transition-delay: 150ms;
+            /* border: 3px solid rgb(36, 35, 35); */
+            border-left: 2px solid rgb(14, 103, 155);
+            border-right: 2px solid rgb(29, 155, 18);
+            border-top: 2px solid rgb(230, 216, 23);
+            border-bottom: 2px solid rgb(107, 38, 70);
+            align-self: center;
+            opacity: 0.9;
+            transition-duration: 300ms;
+            cursor: pointer;
+            padding: 4  px;
+            border-radius: 5px;
+            box-shadow: 0 0 1px 1px rgb(118, 121, 118);
+
+        }
+
+        #project_box img:hover {
+            opacity: 1;
+            box-shadow: 0 0 5px 2px rgb(118, 121, 118);
+            width: 600px;
+            
+
+        }
+
+        #project_description,
+        #project_title {
+            width: 600px;
+            max-width: 100%;
+            text-align: center;
+            padding: 20px 0 0 0;
+            font-family: monospace;
+            margin: 15px auto;
+            font-size: 23px;
+
+        }
+
+        #icon {
+            text-align: center;
+            font-size: 50px;
+
+
+
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        i {
+            padding: 10px;
+            transition-duration: 500ms;
+            cursor: pointer;
+            color: black;
+        }
+
+        i:hover {
+            color: rgb(0, 161, 161);
+            font-size: 52px;
+        }
+
+        hr {
+            border-bottom: 3px solid rgb(54, 54, 54);
+            width: 700px;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        #contact {
+            padding: 20px;
+        }
+
+        #footer {
+            background-color: rgb(227, 255, 236);
+            padding: 20px;
+        }
+
+        #footer a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            font-size: 45px;
+            color: black;
+
+        }
+
+        #footer p {
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+            font-family: Trocchi
+        }
+
+        #footer p i {
+            color: rgb(185, 4, 4);
+        }
+
+        span {
+            font-family: pacifico;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div id="title">
+            <h1>Akib Hasan</h1>
+            <h3>Web Developer</h3>
+        </div>
+
+        <div id="menu">
+            <a class="link" href="#about">About</a>
+            <a class="link" href="#portfolio">Portfoliio</a>
+            <a class="link" href="#contact">Contact</a>
+        </div>
+    </header>
+    <main>
+        <div id="about">
+            <h2 id="heading">About Me</h2>
+            <img id="myimg" src="photos/mine.jpg" alt="MY_photo">
+            <p>Hi! I am Akib Hasan and  currently pursuing BSc degree in Electronics and Telecomunication Engineering at <a target="blank7" href="https://en.wikipedia.org/wiki/Chittagong_University_of_Engineering_%26_Technology">CUET</a>. I'm a self taught web developer.</p>
+            <p>I'm trying to learn everything possible about programming and technology.
+                Currently I am creating project to make myself advance in this field. </p>
+            <p>FreeCodeCamp and Nodejs Developer Course, i followed. </p>
+        </div>
+        <div id="moto">
+            <h4 id="sub_heading">My Philosophy :</h4>
+            <div id="code">
+                <code>
+                    "The way to get started is to quit talking and begin doing."
+
+                </code> <br>
+                <code id="center">-Walt Disney</code>
+            </div>
+        </div>
+
+        <div id="working_section">
+            <h3 id="sub_heading">I am currently working with:</h3>
+            <div id="logo_box">
+                <img class="logo" src="photos/HTML5.svg" alt="HTML5">
+                <img class="logo" src="photos/css3.svg" alt="CSS3">
+                <img class="logo" src="photos/js.jpg" alt="Javascript">
+                <img class="logo" src="photos/node.png" alt="Node.js">
+                <img class="logo" src="photos/mongoDB.jpg" alt="MongoDB">
+                <img class="logo" src="photos/heroku.jpg" alt="Heroku">
+
+            </div>
+        </div>
+        <div id="portfolio">
+            <h2 id="heading">Portfolio</h2>
+
+            <div id="project_box">
+                <img src="photos/Documentation.png" alt="Documentation Photo">
+
+                <h3 id="project_title">Documentaion Page</h3>
+
+                <div id="icon">
+                    <a href="https://github.com/akibhasan15/Survey_page" target="blank"> <i class="fa fa-github"></i></a>
+                    
+                   <a href="http://akibhasan.me/Documentation_page" target="blank_4"> <i class="fa fa-external-link"></i></a>
+
+                </div>
+                <p id="project_description">A responsive documentation Page for javascript language.
+                    Documentation taken from Mozilla Developer Netwotk. 
+                </p>
+
+            </div>
+            <hr>
+
+            <div id="project_box">
+
+                <img src="photos/ProductLanding.png" alt="ProducctLanding photo">
+
+                <h3 id="project_title">Product Landing Page</h3>
+                <div id="icon">
+                    <a href="https://github.com/akibhasan15/Documentation_page" target="blank"> <i class="fa fa-github"></i></a>
+                    <a href="http://akibhasan.me/Documentation_page" target="blank_5"> <i class="fa fa-external-link"></i></a>
+                </div>
+                <p id="project_description">A  product landing Page for a mobile device.</p>
+
+            </div>
+            <hr>                                                                                                                                                                                                                                                    
+
+            <div id="project_box">
+
+                <img src="photos/surveyPage.png" alt="surveyPage photo">
+
+                <h3 id="project_title">Survey Page</h3>
+                <div id="icon">
+                    <a href="https://github.com/akibhasan15/Survey_page" target="blank"> <i class="fa fa-github"></i></a>
+                    <a href="http://akibhasan.me/Survey_page" target="blank_6"> <i class="fa fa-external-link"></i></a>
+                </div>
+                <p id="project_description">A simple survey page made with css and html.</p>
+
+            </div>
+
+        </div>
+
+        <div id="contact">
+            <h2 id="heading">Contact</h2>
+            <div id="icon">
+                <a href="https://github.com/akibhasan15" target="blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/akib-hasan-32b63a86" target="blank1"> <i class="fa fa-linkedin-square"></i>
+                </a>
+                <a href="mailto:akibhasan.bd@gmail.com?Subject=Hello%20again"> <i class="fa fa-envelope-o"></i> </a>
+                <a href="https://www.freecodecamp.org/akibhasan" target="blank2"><i class="fa fa-free-code-camp"></i></a>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <a href="#header"><i class="fa fa-chevron-up"></i></a>
+        <p id="built">Built with<i class='fa fa-heart'> </i>By <span>&lt&gtAkib&lt/&gt</span></p>
+        <p>get this project <a style="display: inline;font-size:20px;color:rgb(67, 11, 221)" href="https://github.com/akibhasan15/porfolio">repositories.</a></p>
+        <p> &copy 2019 All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
