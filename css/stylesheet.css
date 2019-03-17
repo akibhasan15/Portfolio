@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: rgb(247, 241, 241);
+    padding: 60px;
+}
+
+#title {
+    text-align: center;
+    font-family: pacifico;
+    font-size: 21px;
+    
+    color: rgb(118, 121, 120);
+}
+
+#title h3 {
+    padding: 20px;
+    font-family: cursive;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+
+}
+
+.link {
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition-duration: 400ms;
+    font-family: 'Thasadith', sans-serif;
+    color: rgb(14, 9, 9);
+}
+
+.link:hover {
+    color: rgb(8, 137, 146);
+    font-size: 19px;
+}
+
+
+#heading {
+    text-align: center;
+    font-size: 27px;
+    padding: 30px 0 30px 0px;
+    color: rgb(0, 0, 0);
+    
+
+}
+
+#about {
+    padding: 60px;
+}
+
+#myimg {
+    width: 150px;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+
+    border-radius: 50%;
+
+}
+
+#about p {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 21px;
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#sub_heading {
+    text-align: center;
+    font-size: 22px;
+    color: rgb(7, 7, 7);
+
+    margin: 25px 0 0 0;
+    font-weight: 600;
+}
+
+#code {
+    width: fit-content;
+    display: table;
+    background-color: black;
+    padding: 16px 10px;
+    font-size: 20px;
+    margin: 11px auto;
+    text-align: center;
+    color: rgb(3, 204, 3);
+}
+
+#logo_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 23px 0;
+    flex-wrap: wrap;
+
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    margin: 0px 10px 22px 0;
+    padding: 5px;
+    border:2px solid rgb(63, 62, 62);
+    /* border-left: 3px solid rgb(14, 103, 155);
+    border-right: 3px solid rgb(29, 155, 18);
+    border-top: 3px solid rgb(230, 216, 23);
+    border-bottom: 3px solid rgb(107, 38, 70); */
+}
+
+#portfolio {
+    background-color: rgb(230, 231, 240);
+    padding: 60px;
+
+}
+
+#project_box {
+    margin: 60px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#project_box img {
+    width: 590px;
+    max-width: 95%;
+    height: auto;
+    transition-delay: 150ms;
+    /* border: 3px solid rgb(36, 35, 35); */
+    border-left: 2px solid rgb(14, 103, 155);
+    border-right: 2px solid rgb(29, 155, 18);
+    border-top: 2px solid rgb(230, 216, 23);
+    border-bottom: 2px solid rgb(107, 38, 70);
+    align-self: center;
+    opacity: 0.9;
+    transition-duration: 300ms;
+    cursor: pointer;
+    padding: 4  px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px rgb(118, 121, 118);
+
+}
+
+#project_box img:hover {
+    opacity: 1;
+    box-shadow: 0 0 5px 2px rgb(118, 121, 118);
+    width: 600px;
+    max-width: 100%;
+
+}
+
+#project_description,
+#project_title {
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px 0 0 0;
+    font-family: monospace;
+    margin: 15px auto;
+    font-size: 23px;
+
+}
+
+#icon {
+    text-align: center;
+    font-size: 50px;
+
+
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+i {
+    padding: 10px;
+    transition-duration: 500ms;
+    cursor: pointer;
+    color: black;
+}
+
+i:hover {
+    color: rgb(0, 161, 161);
+    font-size: 52px;
+}
+
+hr {
+    border-bottom: 3px solid rgb(54, 54, 54);
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#contact {
+    padding: 20px;
+}
+
+#footer {
+    background-color: rgb(227, 255, 236);
+    padding: 20px;
+}
+
+#footer a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+
+}
+
+#footer p {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-family: Trocchi
+}
+
+#footer p i {
+    color: rgb(185, 4, 4);
+}
+
+span {
+    font-family: pacifico;
+}
